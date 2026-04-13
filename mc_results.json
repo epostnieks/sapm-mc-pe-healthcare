@@ -1,0 +1,141 @@
+{
+  "paper_id": "pe_healthcare",
+  "config_file": "pipeline/mc_configs/pe_healthcare.json",
+  "seed": 42,
+  "n_draws": 100000,
+  "n_channels": 6,
+  "correlation_rho": 0.3,
+  "private_payoff_B": 31.0,
+  "beta_w": {
+    "median": 5.24,
+    "mean": 5.3,
+    "std": 0.85,
+    "p1": 3.58,
+    "p5": 4.01,
+    "p95": 6.79,
+    "p99": 7.53,
+    "ci_90": [
+      4.0,
+      6.8
+    ],
+    "ci_99": [
+      3.6,
+      7.5
+    ],
+    "p_below_1": 0.0,
+    "p_below_1_pct": "0.0000%"
+  },
+  "impossibility_floor": {
+    "floor_value": 3.8,
+    "p_below_floor": 0.02433,
+    "p_below_floor_pct": "2.4330%"
+  },
+  "welfare_cost": {
+    "total_median_B": 162.4,
+    "total_mean_B": 164.2,
+    "total_p5_B": 124.3,
+    "total_p95_B": 210.4
+  },
+  "pi_sa": {
+    "median_B": 131.4,
+    "mean_B": 133.2,
+    "p5_B": 93.3,
+    "p95_B": 179.4
+  },
+  "channel_statistics": {
+    "C1_excess_mortality": {
+      "median": 81.9,
+      "mean": 83.7,
+      "p5": 58.3,
+      "p95": 114.9,
+      "std": 17.4
+    },
+    "C2_hospital_morbidity": {
+      "median": 12.0,
+      "mean": 12.5,
+      "p5": 7.6,
+      "p95": 19.1,
+      "std": 3.6
+    },
+    "C3_cost_inflation": {
+      "median": 34.0,
+      "mean": 34.0,
+      "p5": 23.0,
+      "p95": 45.0,
+      "std": 6.7
+    },
+    "C4_access_loss": {
+      "median": 10.0,
+      "mean": 10.7,
+      "p5": 5.5,
+      "p95": 18.0,
+      "std": 3.9
+    },
+    "C5_workforce_degradation": {
+      "median": 12.0,
+      "mean": 12.0,
+      "p5": 7.5,
+      "p95": 16.5,
+      "std": 2.7
+    },
+    "C6_governance_institutional_failure": {
+      "median": 11.0,
+      "mean": 11.4,
+      "p5": 7.1,
+      "p95": 17.0,
+      "std": 3.1
+    }
+  },
+  "sensitivity_matrix": [
+    {
+      "vsl_multiplier": 0.5,
+      "values": {
+        "dc_0pct": 3.87,
+        "dc_10pct": 3.48,
+        "dc_20pct": 3.1,
+        "dc_30pct": 2.71,
+        "dc_40pct": 2.32
+      }
+    },
+    {
+      "vsl_multiplier": 0.75,
+      "values": {
+        "dc_0pct": 4.53,
+        "dc_10pct": 4.08,
+        "dc_20pct": 3.63,
+        "dc_30pct": 3.17,
+        "dc_40pct": 2.72
+      }
+    },
+    {
+      "vsl_multiplier": 1.0,
+      "values": {
+        "dc_0pct": 5.19,
+        "dc_10pct": 4.67,
+        "dc_20pct": 4.15,
+        "dc_30pct": 3.64,
+        "dc_40pct": 3.12
+      }
+    },
+    {
+      "vsl_multiplier": 1.25,
+      "values": {
+        "dc_0pct": 5.85,
+        "dc_10pct": 5.27,
+        "dc_20pct": 4.68,
+        "dc_30pct": 4.1,
+        "dc_40pct": 3.51
+      }
+    },
+    {
+      "vsl_multiplier": 1.5,
+      "values": {
+        "dc_0pct": 6.52,
+        "dc_10pct": 5.86,
+        "dc_20pct": 5.21,
+        "dc_30pct": 4.56,
+        "dc_40pct": 3.91
+      }
+    }
+  ]
+}
